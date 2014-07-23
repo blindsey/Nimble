@@ -1,7 +1,6 @@
 import Foundation
 
-@objc
-class FailureMessage {
+@objc public class FailureMessage {
     var expected: String = "expected"
     var actualValue: String? = "" // empty string -> use default; nil -> exclude
     var to: String = "to"

@@ -1,7 +1,7 @@
 import Foundation
 
 
-@objc class SourceLocation : Printable {
+@objc public class SourceLocation : Printable {
     let file: String
     let line: Int
 
@@ -15,7 +15,7 @@ import Foundation
         self.line = line
     }
 
-    var description: String {
+    public var description: String {
         return "\(file):\(line)"
     }
 }

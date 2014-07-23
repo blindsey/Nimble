@@ -29,7 +29,7 @@ func beEmpty() -> MatcherFunc<NMBCollection?> {
 }
 
 extension NMBObjCMatcher {
-    class func beEmptyMatcher() -> NMBObjCMatcher {
+    public class func beEmptyMatcher() -> NMBObjCMatcher {
         return NMBObjCMatcher { actualBlock, failureMessage, location in
             let block = ({ actualBlock() as? NMBCollection })
             let expr = Expression(expression: block, location: location)
